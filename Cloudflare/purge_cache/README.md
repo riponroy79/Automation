@@ -1,4 +1,4 @@
-# Purge Cloudflare cache for all ACTIVE zones and write a timestamped CSV report.
+## Purge Cloudflare cache for all ACTIVE zones and write a timestamped CSV report.
 
 This Python automation script purges the entire cache for **all active zones** in your Cloudflare account.  
 
@@ -37,8 +37,7 @@ Usage:
   python purge_cf_cache_all.py --concurrency 8    # parallel workers
   python purge_cf_cache_all.py --windows-safe-name# replace : in filename
 ```
-
-#Example Run
+Example Run
 ```
 $ python purge_cf_cache_all.py
 Fetching active zones…
