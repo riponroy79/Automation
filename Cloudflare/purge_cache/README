@@ -11,3 +11,16 @@ Token precedence:
   1) --token flag
   2) CLOUDFLARE_API_TOKEN env var
   3) API_TOKEN constant (hard-coded below)
+
+# Replace the placeholder string inside script with your actual token.
+API_TOKEN = "PUT_YOUR_CLOUDFLARE_API_TOKEN_HERE"
+
+# How to create the token in the Cloudflare dashboard:
+1. Go to My Profile → API Tokens → Create Token
+2. Choose Custom Token
+3. Add the permissions below-
+Required minimum permissions
+    Zone → Zone: Read (so it can list your zones)
+    Zone → Cache Purge: Edit (so it can purge caches)
+4. Scope the token to either All zones in your account or only the specific zones you want the script to purge.
+5. Copy the token and paste it into the script where API_TOKEN is defined.
