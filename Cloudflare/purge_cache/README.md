@@ -1,4 +1,4 @@
-# Purge Cloudflare cache for all ACTIVE zones and write a timestamped CSV report.
+## Purge Cloudflare cache for all ACTIVE zones and write a timestamped CSV report.
 ```
 Usage:
   python purge_cf_cache_all.py                    # real run
