@@ -1,0 +1,15 @@
+"""
+Purge Cloudflare cache for all ACTIVE zones and write a timestamped CSV report.
+
+Usage:
+  python purge_cf_cache_all.py                    # real run
+  python purge_cf_cache_all.py --dry-run          # list what would be purged
+  python purge_cf_cache_all.py --account-id ABC   # restrict to one account
+  python purge_cf_cache_all.py --concurrency 8    # parallel workers
+  python purge_cf_cache_all.py --windows-safe-name# replace : in filename
+
+Token precedence:
+  1) --token flag
+  2) CLOUDFLARE_API_TOKEN env var
+  3) API_TOKEN constant (hard-coded below)
+"""
