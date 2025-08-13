@@ -7,11 +7,6 @@ Usage:
   python purge_cf_cache_all.py --concurrency 8    # parallel workers
   python purge_cf_cache_all.py --windows-safe-name# replace : in filename
 
-Token precedence:
-  1) --token flag
-  2) CLOUDFLARE_API_TOKEN env var
-  3) API_TOKEN constant (hard-coded below)
-
 # Replace the placeholder string inside script with your actual token.
 API_TOKEN = "PUT_YOUR_CLOUDFLARE_API_TOKEN_HERE"
 
